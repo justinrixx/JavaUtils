@@ -5,8 +5,6 @@
 #include <cstdlib>
 #include <cmath>
 
-
-#include <iostream>
 /**
 * This class is meant to mimic Java's static classes for utility methods
 * <p/> on integers
