@@ -17,20 +17,20 @@ public:
 	/**
 	* Parse a single character into a float
 	* @param c A character to be parsed into a character
-	* @return The integer represented by the character
+	* @return The floating point number represented by the character
 	*/
 	float parseFloat(char c) throw (const char *) {
 		if (isdigit(c)) {
 			return (float)(c - '0');
 		} else {
-			throw "NumberFormatException: Not a valid integer";
+			throw "NumberFormatException: Not a valid number";
 		}
 	}
 
 	/**
 	* Parse a string into a float
-	* @param s A string to be parsed to an integer
-	* @return The integer represented by the string
+	* @param s A string to be parsed to an float
+	* @return The float represented by the string
 	*/
 	float parseFloat(std :: string s) throw (const char *) {
 
@@ -53,7 +53,7 @@ public:
 				hasHadADecimal = true;
 				decimalPosition = i;
 			} else {
-				throw "NumberFormatException: Not a valid integer";
+				throw "NumberFormatException: Not a valid number";
 			}
 		}
 
@@ -64,8 +64,8 @@ public:
 
 	/**
 	* Parse a string into a double
-	* @param s A string to be parsed to an integer
-	* @return The integer represented by the string
+	* @param s A string to be parsed to an float
+	* @return The float represented by the string
 	*/
 	double parseDouble(std :: string s) throw (const char *) {
 
@@ -88,7 +88,7 @@ public:
 				hasHadADecimal = true;
 				decimalPosition = i;
 			} else {
-				throw "NumberFormatException: Not a valid integer";
+				throw "NumberFormatException: Not a valid number";
 			}
 		}
 
